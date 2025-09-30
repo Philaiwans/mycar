@@ -1,0 +1,26 @@
+รัน เซิร์ฟเวอร์
+python manage.py runserver
+
+สร้างไฟล์ requirements
+python -m pip --version
+python -m pip freeze
+python -m pip freeze > requirements.txt
+
+ใช้คำสั่ง เพื่อติดตั้งทุกอย่างที่จำเป็นในครั้ง ใน requirements
+pip install -r requirements.txt
+
+สร้างโปรเจกต์และแอป
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install django
+django-admin startproject mysite
+cd mysite
+python manage.py startapp dashboard
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+FUJI
+1234
